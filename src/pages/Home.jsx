@@ -1,10 +1,12 @@
+import { Link } from 'react-router-dom'
+
 function Home() {
   return (
     <div className="container">
       <section className="hero">
         <h1>Welcome to Softrate</h1>
         <p>Your trusted partner for innovative software solutions and digital transformation</p>
-        <button className="btn-primary">Explore Our Services</button>
+        <Link to="/services" className="btn-primary">Explore Our Services</Link>
       </section>
 
       <section className="features">

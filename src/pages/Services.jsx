@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Services() {
   return (
     <div className="container">
@@ -69,11 +71,10 @@ function Services() {
       </section>
 
       <section style={{ textAlign: 'center', padding: '3rem 0' }}>
-        <h2 style={{ marginBottom: '1rem', color: '#667eea' }}>Ready to Get Started?</h2>
-        <p style={{ marginBottom: '2rem', opacity: '0.9' }}>
+        <h2 style={{ marginBottom: '1rem', color: '#667eea' }}>Ready to Get Started?</h2>        <p style={{ marginBottom: '2rem', opacity: '0.9' }}>
           Contact us today to discuss your project requirements and get a custom quote.
         </p>
-        <button className="btn-primary">Request Quote</button>
+        <Link to="/contact" className="btn-primary">Request Quote</Link>
       </section>
     </div>
   )
