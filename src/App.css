@@ -23,10 +23,20 @@
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  color: #667eea !important;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  /* Fallback for browsers that don't support background-clip */
+}
+
+/* Fallback for older browsers */
+@supports not (background-clip: text) {
+  .hero h1 {
+    color: #667eea !important;
+    -webkit-text-fill-color: #667eea !important;
+  }
 }
 
 .hero p {
